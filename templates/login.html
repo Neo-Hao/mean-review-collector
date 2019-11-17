@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Log into your account{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form>
+  <div>
+    <label>Email address</label>
+    <input type="email" id="inputEmail1" placeholder="Enter email">
+  </div>
+  <div>
+    <label>Password</label>
+    <input type="password" id="inputPassword1" placeholder="Password">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}

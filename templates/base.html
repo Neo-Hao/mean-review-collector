@@ -1,0 +1,16 @@
+<!doctype html>
+<nav>
+  <h1>Mean Review Collector</h1>
+  <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('about') }}">About</a></li>
+    <li><a href="{{ url_for('register') }}">Register</a></li>
+    <li><a href="{{ url_for('login') }}">Login</a></li>
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block content %}{% endblock %}
+</section>
