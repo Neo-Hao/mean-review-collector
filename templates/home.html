@@ -1,21 +1,24 @@
 {% extends 'base.html' %}
 
 {% block header %}
+<div class="container">
   <h1>{% block title %}Mean Reviews{% endblock %}</h1>
+</div>
 {% endblock %}
 
 {% block content %}
+<div class="container">
   <blockquote>
-    This paper is more appropriate for a speciality journal. Like, one that
-    specializes in terrible papers. -From @thirdreviewer
+    <p>This paper is more appropriate for a speciality journal. Like, one that specializes in terrible papers.</p>
+    <footer>From @thirdreviewer</footer>
   </blockquote>
   <blockquote>
-    Before I can recommend acceptance, I request the following 272 changes
-        to the manuscript. - From @thirdreviewer
+    <p>Before I can recommend acceptance, I request the following 272 changes to the manuscript.</p>
+    <footer>From @thirdreviewer</footer>
   </blockquote>
   <blockquote>
-    Let me begin by apologizing for being so late with this review – it took me
-    much longer than expected to figure out how best to insult all the authors.
-    - From @thirdreviewer
+    <p>Let me begin by apologizing for being so late with this review – it took me much longer than expected to figure out how best to insult all the authors.</p>
+    <footer>From @thirdreviewer</footer>
   </blockquote>
+</div>
 {% endblock %}

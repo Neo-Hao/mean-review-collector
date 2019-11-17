@@ -1,19 +1,25 @@
 {% extends 'base.html' %}
 
+
 {% block header %}
+<div class="container">
   <h1>{% block title %}Register an account{% endblock %}</h1>
+</div>
 {% endblock %}
 
 {% block content %}
-<form>
-  <div>
-    <label>Email address</label>
-    <input type="email" id="inputEmail1" placeholder="Enter email">
-  </div>
-  <div>
-    <label>Password</label>
-    <input type="password" id="inputPassword1" placeholder="Password">
-  </div>
-  <button type="submit">Submit</button>
-</form>
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="inputEmail1">Email address</label>
+      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 {% endblock %}
