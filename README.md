@@ -1,6 +1,6 @@
 # Mean Review Collector
 
-This repository contains the code for the tutorial [Build, test, and deploy an interactive Flask application] (https://medium.com/@neohao/build-test-and-deploy-an-interactive-flask-application-part-i-templates-53a7b0cbe760).
+This repository contains the code for the tutorial [Learn Flask in a scientific way](https://medium.com/@neohao/learn-flask-in-a-scientific-way-baf4d8055f6e).
 
 ## Requirements
 

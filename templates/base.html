@@ -39,9 +39,15 @@
   </div>
 </nav>
 
+
 <section class="content">
   <header>
     {% block header %}{% endblock %}
   </header>
+  {% for message in get_flashed_messages() %}
+    <div class="container alert alert-danger">
+      <span>Error: {{ message }}</span>
+    </div>
+  {% endfor %}
   {% block content %}{% endblock %}
 </section>
