@@ -15,25 +15,25 @@
     crossorigin="anonymous"></script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{ url_for('home') }}">Mean Review Collector</a>
+  <a class="navbar-brand" href="review.home">Mean Review Collector</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+        <a class="nav-link" href="{{ url_for('review.home') }}">Home</a>
       </li>
       <li class="nav-item">
-        <li><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+        <li><a class="nav-link" href="{{ url_for('review.about') }}">About</a></li>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+        <a class="nav-link" href="{{ url_for('auth.register') }}">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+        <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
       </li>
     </ul>
   </div>

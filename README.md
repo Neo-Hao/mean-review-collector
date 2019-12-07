@@ -9,6 +9,15 @@ This repository contains the code for the tutorial [Learn Flask in a scientific 
 
 ## Launch the application
 
+If you are using Linux or Mac, run the following three lines through the terminal:
 ```
-python3 app.py
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run
+```
+If you are using Windows, run the following three lines through cmd:
+```
+set FLASK_APP=flaskr
+set FLASK_ENV=development
+flask run
 ```
