@@ -1,3 +1,6 @@
-# Environments
 env/
 instance/
+.pytest_cache/
+tests/__pycache__/
+app.egg-info/
+app/__pycache__/*
