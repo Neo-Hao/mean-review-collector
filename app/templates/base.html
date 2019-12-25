@@ -29,12 +29,21 @@
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('auth.register') }}">Register</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
-      </li>
+      {% if session.get('user_id') is none %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('auth.register') }}">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
+        </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('review.dashboard') }}">My Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('auth.logout') }}">Log Out</a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </nav>
