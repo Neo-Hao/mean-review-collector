@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="container">
+  <h1>{% block title %}Write a new review{% endblock %}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <form method="post">
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Your review:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="review-text"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+{% endblock %}

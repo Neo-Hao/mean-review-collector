@@ -20,5 +20,15 @@
     <p class="mb-0">Let me begin by apologizing for being so late with this review – it took me much longer than expected to figure out how best to insult all the authors.</p>
     <footer class="blockquote-footer">From @thirdreviewer</footer>
   </blockquote>
+
+
+  {% for review in reviews %}
+    <blockquote class="blockquote">
+      <p class="mb-0">{{ review['content'] }}</p>
+      <footer class="blockquote-footer">From @{{ review['username'].split("@")[0] }}</footer>
+    </blockquote>
+  {% endfor %}
+
+
 </div>
 {% endblock %}
