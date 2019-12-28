@@ -8,19 +8,13 @@
 
 {% block content %}
 <div class="container">
+
+  <p class="lead">Did you receive a mean review on your paper? Share it with us. Check the mean reviews others shared below:</p>
+
   <blockquote class="blockquote">
     <p class="mb-0">This paper is more appropriate for a speciality journal. Like, one that specializes in terrible papers.</p>
     <footer class="blockquote-footer">From @thirdreviewer</footer>
   </blockquote>
-  <blockquote class="blockquote">
-    <p class="mb-0">Before I can recommend acceptance, I request the following 272 changes to the manuscript.</p>
-    <footer class="blockquote-footer">From @thirdreviewer</footer>
-  </blockquote>
-  <blockquote class="blockquote">
-    <p class="mb-0">Let me begin by apologizing for being so late with this review – it took me much longer than expected to figure out how best to insult all the authors.</p>
-    <footer class="blockquote-footer">From @thirdreviewer</footer>
-  </blockquote>
-
 
   {% for review in reviews %}
     <blockquote class="blockquote">
